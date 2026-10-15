@@ -4,29 +4,29 @@
     {
       "asset": "index.html",
       "http": 200,
-      "bytes": 15410,
-      "sha256": "215787347d96171755b237a7d2fb7f945a487264c422874d21e1777aac4f9a51",
+      "bytes": 13371,
+      "sha256": "b928152c9de761506a7eaba39e3ebe37da12f38593397ddf3b6ebdcb812203d5",
       "sourceMatches": true
     },
     {
       "asset": "app.mjs",
       "http": 200,
-      "bytes": 6390,
-      "sha256": "21dfde9c567e62550eedd286937716bc0eec85453a7b4b036f6e03b1ea964d2c",
+      "bytes": 1779,
+      "sha256": "42199a362e13521e39c9cfe6c2ce6b674915f41d9051e9117f992029b1aad85d",
       "sourceMatches": true
     },
     {
       "asset": "core.mjs",
       "http": 200,
-      "bytes": 523,
-      "sha256": "b6be0662ac96cf0e632707682758b0cc39d12f3914858bbf56d5ae78128ef1cd",
+      "bytes": 701,
+      "sha256": "9234710cc61e414139642e7047774b1bfcfee9d0eb1ebb37bc82ef3538d46f8f",
       "sourceMatches": true
     },
     {
       "asset": "style.css",
       "http": 200,
-      "bytes": 23614,
-      "sha256": "83078893af3633aeabd61e03de2d5a39e3229b4f93433a8b9c13e2a9fa307677",
+      "bytes": 14806,
+      "sha256": "92906f1a84a7081758aeb6f49352fabd4cbe3ceabb4ec14cd7c8bb513e7876a9",
       "sourceMatches": true
     },
     {
