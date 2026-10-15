@@ -1,0 +1,80 @@
+{
+  "sourceSha": "8d522e5ef83c4a6c3f19d4a29a8bc924e065efc8",
+  "url": "https://canada-high-tech-solutions.vercel.app",
+  "assets": [
+    {
+      "file": "FONT-LICENSE.txt",
+      "http": 200,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "exactMatch": true
+    },
+    {
+      "file": "app.mjs",
+      "http": 200,
+      "sha256": "42199a362e13521e39c9cfe6c2ce6b674915f41d9051e9117f992029b1aad85d",
+      "exactMatch": true
+    },
+    {
+      "file": "core.mjs",
+      "http": 200,
+      "sha256": "9234710cc61e414139642e7047774b1bfcfee9d0eb1ebb37bc82ef3538d46f8f",
+      "exactMatch": true
+    },
+    {
+      "file": "favicon.svg",
+      "http": 200,
+      "sha256": "33a76fd04a73d36795e25c9d9b9d21ca2fb172bb2f82de6ce5730f5a90a094f4",
+      "exactMatch": true
+    },
+    {
+      "file": "index.html",
+      "http": 200,
+      "sha256": "5172ec5ff98a0ad29d8dba766d3002f04ec030ee529cd936fcf8d826e22ed483",
+      "exactMatch": true
+    },
+    {
+      "file": "og.png",
+      "http": 200,
+      "sha256": "375a8dbc06927fc2a8fc84f25f6e41a7ee518b2a4af6233102c433f41b5b83eb",
+      "exactMatch": true
+    },
+    {
+      "file": "robots.txt",
+      "http": 200,
+      "sha256": "f0a96e24e69c29bc3cea0e02b54da42fca044201683df0a856bbaacbbeb9f96d",
+      "exactMatch": true
+    },
+    {
+      "file": "sitemap.xml",
+      "http": 200,
+      "sha256": "e9420ca2e0bec33fa1a409f4f4bb87f2ccfc53014bfd08dd6696f808ddf495a5",
+      "exactMatch": true
+    },
+    {
+      "file": "studio.ttf",
+      "http": 200,
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+      "exactMatch": true
+    },
+    {
+      "file": "style.css",
+      "http": 200,
+      "sha256": "92906f1a84a7081758aeb6f49352fabd4cbe3ceabb4ec14cd7c8bb513e7876a9",
+      "exactMatch": true
+    }
+  ],
+  "deployment": [
+    {
+      "url": "https://api.github.com/repos/MasoudSistani/canada-high-tech-solutions/statuses/8d522e5ef83c4a6c3f19d4a29a8bc924e065efc8",
+      "avatar_url": "https://avatars.githubusercontent.com/in/8329?v=4",
+      "id": 56389690680,
+      "node_id": "SC_kwDOVKQptM8AAAANIRZlOA",
+      "state": "success",
+      "description": "Deployment has completed",
+      "target_url": "https://vercel.com/masouds-projects-320aa013/canada-high-tech-solutions/GV72StThRqjAzgbRzFFeFRDDoz5Y",
+      "context": "Vercel",
+      "created_at": "2026-10-15T02:37:18Z",
+      "updated_at": "2026-10-15T02:37:18Z"
+    }
+  ]
+}
