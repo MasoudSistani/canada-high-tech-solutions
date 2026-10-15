@@ -37,6 +37,15 @@ for (const width of [375, 650, 768, 1024, 1440]) {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     await details.locator("[data-service]").click();
     assert.equal(await page.locator("#service").inputValue(), service);
+    await page.getByLabel("What would you like to make?").fill("Gift + café & #? 你好\nSize and quantity to discuss");
+    const mail = await page.locator("#draft-link").getAttribute("href");
+    const headers = Object.fromEntries(mail.split('?')[1].split('&').map(field => {
+      const i = field.indexOf('=');
+      return [field.slice(0, i), decodeURIComponent(field.slice(i + 1))];
+    }));
+    assert.equal(headers.subject, `Project inquiry: ${service}`);
+    assert.equal(headers.body, `Hi Canada High-tech Solutions,\r\n\r\nI'd like to discuss a project.\r\n\r\nName / company: Not provided\r\nProject type: ${service}\r\nIdea: Gift + café & #? 你好\r\nSize and quantity to discuss\r\nTiming: Flexible\r\n\r\nThanks!`);
+    assert.ok(!mail.includes('+'));
   }
   assert.deepEqual(errors, []);
   results.push({

@@ -1,5 +1,5 @@
 {
-  "url": "https://canada-high-tech-solutions.vercel.app",
+  "url": "http://localhost:4173",
   "runs": [
     {
       "width": 375,

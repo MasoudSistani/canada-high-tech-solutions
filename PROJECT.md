@@ -1,7 +1,7 @@
 # Project
 
 ## Purpose
-A professional company services site for websites, apps, games, interactive design and campaigns. Explain deliverables, process and contact without experimental projects or invented credentials.
+A professional company services site for websites, apps, games, interactive design, campaigns, 3D design, 3D printing and custom gifts. Explain deliverables, process and contact without experimental projects or invented credentials.
 
 ## Direction
 Primary surface: Decide / Learn. Preserve Studio typography, serif emphasis, warm paper, ink and coral. Asymmetric editorial layout with a static geometric brand composition. No product mockups, lab widgets, personal portfolio, fake clients, testimonials or metrics. Design self-audit: 0/10.
