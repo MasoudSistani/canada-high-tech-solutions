@@ -209,210 +209,6 @@ h1 em {
   margin-top: 13px;
   color: var(--muted);
 }
-.lab {
-  min-width: 0;
-}
-.lab-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 14px;
-  font-size: 10px;
-}
-.lab-number {
-  font-size: 10px;
-  font-variant-numeric: tabular-nums;
-}
-.composition {
-  height: 345px;
-  position: relative;
-  background: #dfdfd1;
-  overflow: hidden;
-  touch-action: pan-y;
-  --x: 0px;
-  --y: 0px;
-}
-.art-grid {
-  display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
-  height: 100%;
-  transition: transform 0.6s ease;
-  transform: translate(calc(var(--x) * 0.14), calc(var(--y) * 0.14)) scale(1.07);
-}
-.tile {
-  position: relative;
-  overflow: hidden;
-}
-.tile-a {
-  background: #f2543d;
-}
-.sun {
-  position: absolute;
-  width: 165px;
-  height: 165px;
-  border-radius: 50%;
-  background: #20211e;
-  left: 12%;
-  top: 12%;
-  transform: translate(var(--x), var(--y));
-  transition: transform 0.3s ease;
-}
-.tile-b {
-  background: #e4e3d5;
-}
-.arch {
-  position: absolute;
-  border: 32px solid #aeb3a2;
-  border-bottom: 0;
-  width: 160px;
-  height: 170px;
-  border-radius: 100px 100px 0 0;
-  top: 30px;
-  left: 30%;
-  transform: rotate(-25deg) translate(calc(var(--x) * -0.7), var(--y));
-  transition: transform 0.3s ease;
-}
-.tile-c {
-  background: #dddccb;
-}
-.checker {
-  position: absolute;
-  inset: 0;
-  background: conic-gradient(
-      #252620 25%,
-      transparent 0 50%,
-      #252620 0 75%,
-      transparent 0
-    )
-    0 0/50px 50px;
-  opacity: 0.96;
-  transform: translate(calc(var(--x) * -0.6), calc(var(--y) * -0.6)) scale(1.2);
-}
-.tile-d {
-  background: #eec5ac;
-}
-.asterisk {
-  font-size: 238px;
-  color: #ed513a;
-  position: absolute;
-  top: -71px;
-  right: -15px;
-  transform: rotate(var(--r, 0deg));
-  line-height: 1.4;
-}
-.demo-window {
-  position: absolute;
-  left: 18%;
-  right: 12%;
-  top: 22%;
-  min-height: 185px;
-  background: #f9f7ee;
-  box-shadow: 6px 10px 0 #25262029;
-  transform: translate(calc(var(--x) * -0.24), calc(var(--y) * -0.24))
-    rotate(-6deg);
-  transition: transform 0.45s ease;
-}
-.window-bar {
-  padding: 10px 12px;
-  border-bottom: 1px solid #cfcdc2;
-  display: flex;
-  justify-content: space-between;
-  font-size: 7px;
-  gap: 7px;
-}
-.window-bar > span:first-child {
-  font-size: 6px;
-  letter-spacing: 1px;
-}
-.preview-kicker {
-  font-size: 7px;
-  letter-spacing: 1.5px;
-  margin-bottom: 9px;
-}
-.preview-title {
-  font-size: 33px;
-  letter-spacing: -1.5px;
-  line-height: 1.05;
-  margin-bottom: 14px;
-}
-#demo-content {
-  padding: 20px 22px 18px;
-}
-.preview-line {
-  display: block;
-  width: 38px;
-  height: 5px;
-  background: var(--coral);
-}
-.art-label {
-  position: absolute;
-  bottom: 12px;
-  right: 13px;
-  font-size: 8px;
-  letter-spacing: 1.5px;
-  background: #f5f3ec;
-  padding: 4px 6px;
-}
-.mode-controls {
-  display: flex;
-  border-bottom: 1px solid var(--line);
-  gap: 0;
-}
-.mode-controls button {
-  flex: 1;
-  border: 0;
-  min-height: 49px;
-  background: transparent;
-  font-size: 11px;
-  padding: 10px 4px;
-  position: relative;
-}
-.mode-controls button[aria-pressed="true"] {
-  font-weight: 700;
-}
-.mode-controls button[aria-pressed="true"]:after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--coral);
-}
-.mode-controls button:hover {
-  background: #e9e7dd;
-}
-.lab-caption {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-top: 17px;
-}
-.lab-caption p {
-  font-size: 12px;
-  margin-bottom: 0;
-  max-width: 340px;
-  line-height: 1.6;
-  min-height: 39px;
-}
-.lab-caption button {
-  width: 44px;
-  height: 44px;
-  background: none;
-  border: 1px solid #b9b8ae;
-  border-radius: 50%;
-  font-size: 25px;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-.lab-caption button:hover {
-  background: #e2dfd4;
-}
-.lab-hint {
-  font-size: 10px;
-  color: var(--muted);
-  margin: 8px 0 0;
-}
 .strip {
   border-block: 1px solid var(--line);
   display: flex;
@@ -507,82 +303,6 @@ summary h3 {
 details[open] .plus {
   transform: rotate(45deg);
 }
-.experiment {
-  background: #e8e8de;
-}
-.experiment-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12%;
-  align-items: center;
-  padding-block: 58px;
-}
-.experiment-art {
-  height: 280px;
-  position: relative;
-  background:
-    linear-gradient(#aaa99d33 1px, transparent 1px),
-    linear-gradient(90deg, #aaa99d33 1px, transparent 1px);
-  background-size: 28px 28px;
-  max-width: 450px;
-  overflow: hidden;
-}
-.snake-body {
-  position: absolute;
-  width: 190px;
-  height: 105px;
-  left: 18%;
-  top: 22%;
-  border-left: 34px solid var(--ink);
-  border-bottom: 34px solid var(--ink);
-  border-radius: 2px;
-}
-.snake-dot {
-  position: absolute;
-  background: var(--ink);
-  width: 34px;
-  height: 34px;
-  left: calc(18% + 156px);
-  top: calc(22% + 70px);
-  z-index: 1;
-}
-.snake-dot:after {
-  content: "";
-  background: var(--paper);
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  right: 6px;
-  top: 7px;
-}
-.snake-food {
-  width: 26px;
-  height: 26px;
-  background: var(--coral);
-  border-radius: 50%;
-  position: absolute;
-  left: 73%;
-  top: 30%;
-}
-.grid-label {
-  position: absolute;
-  bottom: 17px;
-  left: 20px;
-  font-size: 12px;
-  letter-spacing: 8px;
-}
-.experiment-copy h2 {
-  font-size: 46px;
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: -2px;
-  margin: 21px 0;
-}
-.experiment-copy > p:not(.eyebrow):not(.fine) {
-  max-width: 350px;
-  font-size: 14px;
-  color: #50534a;
-}
 .text-link {
   border-bottom: 1px solid var(--ink);
   font-size: 13px;
@@ -596,9 +316,6 @@ details[open] .plus {
   font-size: 10px;
   line-height: 1.7;
   color: var(--muted);
-}
-.experiment-copy .fine {
-  margin-top: 12px;
 }
 .process {
   padding-block: 110px;
@@ -782,124 +499,9 @@ details[open] .plus {
   padding: 24px;
   background: #e8e8de;
 }
-.preview-checklist {
-  display: grid;
-  gap: 8px;
-}
-.preview-checklist label {
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
-}
-.preview-checklist input {
-  accent-color: var(--coral);
-  width: 17px;
-  height: 17px;
-}
-.progress {
-  font-size: 8px;
-  margin: 8px 0 0;
-}
-.composition[data-mode="apps"] .demo-window {
-  transform: rotate(4deg);
-  left: 27%;
-  right: 20%;
-  top: 12%;
-  min-height: 240px;
-  border-radius: 16px;
-  overflow: hidden;
-}
-.composition[data-mode="apps"] #demo-content {
-  padding: 14px;
-}
-.composition[data-mode="apps"] .preview-title {
-  font-size: 23px;
-  margin-bottom: 9px;
-}
-.composition[data-mode="games"] .demo-window {
-  transform: rotate(-3deg);
-  top: 18%;
-  left: 15%;
-  right: 15%;
-  min-height: 220px;
-  background: var(--ink);
-  color: var(--paper);
-}
-.composition[data-mode="games"] .window-bar {
-  border-color: #67685e;
-}
-.play-start {
-  border: 1px solid var(--paper);
-  background: transparent;
-  color: var(--paper);
-  font-size: 11px;
-  min-height: 44px;
-  padding: 9px 18px;
-}
-.dot-arena {
-  position: relative;
-  height: 115px;
-}
-.catch-dot {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 6px solid var(--ink);
-  background: var(--coral);
-  left: 35%;
-  top: 20%;
-  transition:
-    left 0.15s,
-    top 0.15s;
-}
-.game-count {
-  font-size: 10px;
-  margin: 0;
-}
-.composition[data-mode="campaigns"] .demo-window {
-  transform: rotate(3deg);
-  background: #ed513a;
-  color: #10120e;
-  top: 18%;
-  left: 17%;
-  right: 14%;
-  min-height: 225px;
-}
-.composition[data-mode="campaigns"] .window-bar {
-  border-color: #873b2a;
-}
-.campaign-title {
-  font-size: 39px;
-  line-height: 1;
-  letter-spacing: -2px;
-  margin: 0 0 10px;
-}
-.campaign-switch {
-  border: 0;
-  border-bottom: 1px solid var(--ink);
-  background: transparent;
-  font-size: 10px;
-  min-height: 44px;
-  padding: 0;
-}
-.composition.is-shuffled .art-grid {
-  transform: rotate(180deg) scale(1.08);
-}
 @media (min-width: 1600px) {
   .hero {
     gap: 9%;
-  }
-  .composition {
-    height: 410px;
-  }
-  .demo-window {
-    min-height: 225px;
-  }
-  .preview-title {
-    font-size: 43px;
   }
 }
 @media (max-width: 1100px) {
@@ -919,16 +521,6 @@ details[open] .plus {
   .hero {
     gap: 5%;
     padding-top: 65px;
-  }
-  .composition {
-    height: 310px;
-  }
-  .demo-window {
-    left: 13%;
-    right: 10%;
-  }
-  .preview-title {
-    font-size: 30px;
   }
   .hero .eyebrow {
     font-size: 8px;
@@ -982,37 +574,6 @@ details[open] .plus {
     font-size: 11px;
     gap: 15px;
   }
-  .composition {
-    height: 290px;
-  }
-  .sun {
-    width: 130px;
-    height: 130px;
-  }
-  .demo-window {
-    left: 8%;
-    right: 8%;
-    top: 21%;
-    min-height: 175px;
-  }
-  #demo-content {
-    padding: 20px 15px;
-  }
-  .preview-title {
-    font-size: 28px;
-  }
-  .window-bar {
-    font-size: 6px;
-  }
-  .lab-caption p {
-    font-size: 10px;
-  }
-  .mode-controls button {
-    font-size: 10px;
-  }
-  .lab-hint {
-    font-size: 9px;
-  }
   .services,
   .process {
     padding-block: 75px;
@@ -1038,15 +599,6 @@ details[open] .plus {
     padding-right: 10px;
   }
   .service-body p {
-    font-size: 12px;
-  }
-  .experiment-inner {
-    gap: 7%;
-  }
-  .experiment-copy h2 {
-    font-size: 37px;
-  }
-  .experiment-copy > p:not(.eyebrow):not(.fine) {
     font-size: 12px;
   }
   .steps h3 {
@@ -1163,52 +715,6 @@ details[open] .plus {
   .hero-note {
     font-size: 10px;
   }
-  .lab {
-    margin-top: 44px;
-  }
-  .lab-top {
-    padding-bottom: 12px;
-  }
-  .lab-top .eyebrow {
-    font-size: 9px;
-    letter-spacing: 1px;
-  }
-  .composition {
-    height: 315px;
-  }
-  .demo-window {
-    left: 19%;
-    right: 10%;
-    top: 23%;
-    min-height: 180px;
-  }
-  .preview-title {
-    font-size: 32px;
-  }
-  .window-bar {
-    font-size: 7px;
-  }
-  #demo-content {
-    padding: 21px 19px;
-  }
-  .sun {
-    width: 150px;
-    height: 150px;
-    left: 8%;
-    top: 7%;
-  }
-  .lab-caption p {
-    font-size: 11px;
-    max-width: 285px;
-  }
-  .lab-hint {
-    font-size: 9px;
-    max-width: 300px;
-  }
-  .mode-controls button {
-    font-size: 11px;
-    min-height: 50px;
-  }
   .strip {
     font-size: 8px;
     letter-spacing: 0.7px;
@@ -1254,26 +760,6 @@ details[open] .plus {
     font-size: 13px;
   }
   .service-body .tags {
-    font-size: 9px;
-  }
-  .experiment-inner {
-    grid-template-columns: 1fr;
-    padding-block: 30px 46px;
-    gap: 30px;
-  }
-  .experiment-art {
-    height: 230px;
-    width: 100%;
-    max-width: none;
-  }
-  .experiment-copy h2 {
-    font-size: 43px;
-    margin-block: 23px;
-  }
-  .experiment-copy > p:not(.eyebrow):not(.fine) {
-    font-size: 14px;
-  }
-  .experiment-copy .eyebrow {
     font-size: 9px;
   }
   .steps {
@@ -1363,24 +849,6 @@ details[open] .plus {
   .footer-name span {
     display: none;
   }
-  .composition[data-mode="apps"] .demo-window {
-    left: 25%;
-    right: 18%;
-  }
-  .composition[data-mode="campaigns"] .demo-window {
-    left: 16%;
-    right: 12%;
-  }
-  .composition[data-mode="games"] .demo-window {
-    left: 13%;
-    right: 13%;
-  }
-  .preview-checklist label {
-    min-height: 44px;
-  }
-  .campaign-title {
-    font-size: 39px;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1392,12 +860,11 @@ details[open] .plus {
     animation: none !important;
     transition: none !important;
   }
-  .art-grid,
-  .sun,
-  .arch,
-  .checker,
-  .asterisk,
-  .demo-window {
-    transform: none !important;
-  }
 }
+
+.brand-art { position:relative; min-height:350px; overflow:hidden; background:#dfdfd1; }
+.brand-orbit { position:absolute; width:260px; height:260px; border:50px solid var(--coral); border-radius:50%; top:-40px; right:-25px; }
+.brand-block { position:absolute; width:150px; height:170px; background:var(--ink); bottom:0; left:0; border-radius:80px 80px 0 0; }
+.brand-cross { position:absolute; font:150px/1 Georgia,serif; right:45px; bottom:5px; color:var(--ink); }
+.brand-art p { position:absolute; top:32px; left:25px; font-size:11px; line-height:1.7; letter-spacing:1px; }
+@media(max-width:650px) { .brand-art { min-height:240px; margin-top:36px; } .brand-orbit { width:200px; height:200px; border-width:38px; } .brand-block { width:110px; height:120px; } .brand-cross { font-size:110px; } }

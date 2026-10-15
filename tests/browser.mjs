@@ -29,27 +29,9 @@ for (const width of [375, 768, 1440]) {
     ),
     false,
   );
-  for (const mode of ["Websites", "Apps", "Games", "Campaigns"]) {
-    const control = page.getByRole("button", { name: mode, exact: true });
-    await control.click();
-    assert.equal(await control.getAttribute("aria-pressed"), "true");
-    assert.ok(
-      (await page.locator("#mode-description").textContent()).length > 20,
-    );
-  }
-  await page.getByRole("button", { name: "Games", exact: true }).click();
-  await page.getByRole("button", { name: "Play a round" }).click();
-  await page.getByRole("button", { name: "Catch the dot" }).click();
-  await page.getByText("Caught: 1", { exact: true }).waitFor();
-  await page.getByRole("button", { name: "Apps", exact: true }).click();
-  await page.getByRole("checkbox", { name: "Shape the idea" }).check();
-  await page.getByText("1 of 3 complete", { exact: true }).waitFor();
-  await page.getByRole("button", { name: "Websites", exact: true }).click();
-  await page.getByRole("button", { name: "Shuffle composition" }).click();
-  const stage = page.locator("#composition");
-  await stage.focus();
-  await page.keyboard.press("ArrowRight");
-  assert.ok((await stage.getAttribute("style")).includes("--x"));
+  assert.equal(await page.locator('#playground, .lab, .experiment, #composition, [data-mode]').count(), 0);
+  assert.doesNotMatch(await page.locator('body').innerText(), /snake|playground|interaction lab|internal demo|experiment/i);
+  assert.equal(await page.locator('a[href*="snake"]').count(), 0);
   if (width === 375) {
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     assert.equal(
@@ -127,8 +109,7 @@ assert.equal(
   ),
   true,
 );
-assert.equal(await page.locator('.demo-window').evaluate(el => getComputedStyle(el).transform), 'none');
-assert.equal(await page.locator('.art-grid').evaluate(el => getComputedStyle(el).transitionDuration), '0s');
+assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).scrollBehavior), 'auto');
 await page.screenshot({ path: "evidence/reduced-motion-375.png" });
 report.reducedMotion = "passed";
 await browser.close();

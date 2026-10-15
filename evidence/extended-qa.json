@@ -1,48 +1,35 @@
 {
-  "url": "https://canada-high-tech-solutions.vercel.app",
+  "url": "http://localhost:4173",
   "results": [
-    {
-      "touch": "CDP native touch drag passed"
-    },
     {
       "width": 375,
       "consoleErrors": [],
-      "allModeAccessibility": "passed",
-      "keyboardGame": "passed",
-      "serviceInquiries": "passed",
-      "externalDemo": 200
+      "businessPaths": "passed",
+      "serviceInquiries": "passed"
     },
     {
       "width": 650,
       "consoleErrors": [],
-      "allModeAccessibility": "passed",
-      "keyboardGame": "passed",
-      "serviceInquiries": "passed",
-      "externalDemo": 200
+      "businessPaths": "passed",
+      "serviceInquiries": "passed"
     },
     {
       "width": 768,
       "consoleErrors": [],
-      "allModeAccessibility": "passed",
-      "keyboardGame": "passed",
-      "serviceInquiries": "passed",
-      "externalDemo": 200
+      "businessPaths": "passed",
+      "serviceInquiries": "passed"
     },
     {
       "width": 1024,
       "consoleErrors": [],
-      "allModeAccessibility": "passed",
-      "keyboardGame": "passed",
-      "serviceInquiries": "passed",
-      "externalDemo": 200
+      "businessPaths": "passed",
+      "serviceInquiries": "passed"
     },
     {
       "width": 1440,
       "consoleErrors": [],
-      "allModeAccessibility": "passed",
-      "keyboardGame": "passed",
-      "serviceInquiries": "passed",
-      "externalDemo": 200
+      "businessPaths": "passed",
+      "serviceInquiries": "passed"
     }
   ],
   "noJS": "email and content available"
