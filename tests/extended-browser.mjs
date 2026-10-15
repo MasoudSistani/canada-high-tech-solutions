@@ -12,6 +12,9 @@ for (const width of [375, 650, 768, 1024, 1440]) {
     isMobile: width === 375,
   });
   const page = await context.newPage();
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.message));
+  page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   await page.goto(url);
   await page.evaluate(() => document.fonts.ready);
   await page.locator("#draft-link").click();
@@ -120,8 +123,10 @@ for (const width of [375, 650, 768, 1024, 1440]) {
     "https://snake-demo-mu.vercel.app",
   );
   assert.equal(external.status(), 200);
+  assert.deepEqual(errors, []);
   results.push({
     width,
+    consoleErrors: errors,
     allModeAccessibility: "passed",
     keyboardGame: "passed",
     serviceInquiries: "passed",

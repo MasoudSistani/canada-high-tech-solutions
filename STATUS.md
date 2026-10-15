@@ -29,6 +29,14 @@ The current Vercel CLI authentication worked. A new isolated project was created
 
 `deployment.json` records project coordinates and the first verified deployment. The production alias follows later production deployments. Resolve the current immutable deployment with `vercel inspect https://canada-high-tech-solutions.vercel.app` and the current source revision with `git rev-parse HEAD`.
 
+## Mail draft encoding bugfix
+
+- Reproduced the iPhone Mail symptom with failing native `decodeURIComponent` assertions: `Project+inquiry:+Game+or+interactive+experience` instead of spaces. Previous form-style decoding masked this bug.
+- Replaced `URLSearchParams` with independent `encodeURIComponent` subject/body values. Spaces are `%20`, intended plus signs are `%2B`, body line endings normalize to CRLF, and subject control characters normalize to spaces to prevent header injection.
+- Unit regressions assert exact decoded subject/body, mixed input newlines, Unicode, literal plus signs, reserved characters, safe subject controls, defaults and empty ideas. All three pass after observed RED runs.
+- Browser contact checks now decode natively without replacing plus signs and compare the complete draft at 375, 768 and 1440 pixels. Core and extended browser suites pass locally, with zero detected JS errors, overflow or accessibility violations.
+- No form API, design, destination address or mail-sending behavior changed. No email sent.
+
 ## Limitations
 
 The email draft requires a configured email application. Sending and delivery are outside the website. Automated accessibility scans do not replace a human assistive-technology audit. No custom domain was purchased or configured. No ads, billing changes or outbound email actions were performed.

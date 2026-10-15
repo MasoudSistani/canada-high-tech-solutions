@@ -69,17 +69,21 @@ for (const width of [375, 768, 1440]) {
       "false",
     );
   }
-  await page.getByLabel("Your name or company").fill("QA & Company");
+  await page.getByLabel("Your name or company").fill("QA + café & Company");
   await page
     .getByLabel("What would you like to make?")
-    .fill("A helpful website & app");
-  await page.getByLabel("Project type").selectOption("Website");
+    .fill("A helpful website + app & #? 你好 🎮\nSecond line");
+  await page.getByLabel("Project type").selectOption({ label: "Game or interactive experience" });
   const mail = await page.locator("#draft-link").getAttribute("href");
   assert.ok(mail.startsWith("mailto:canadahightechsolutions@gmail.com?"));
-  assert.match(
-    decodeURIComponent(mail.replaceAll("+", " ")),
-    /A helpful website & app/,
-  );
+  const headers = Object.fromEntries(mail.slice(mail.indexOf("?") + 1).split("&").map(field => {
+    const equals = field.indexOf("=");
+    return [field.slice(0, equals), decodeURIComponent(field.slice(equals + 1))];
+  }));
+  assert.equal(headers.subject, "Project inquiry: Game or interactive experience");
+  assert.equal(headers.body, "Hi Canada High-tech Solutions,\r\n\r\nI'd like to discuss a project.\r\n\r\nName / company: QA + café & Company\r\nProject type: Game or interactive experience\r\nIdea: A helpful website + app & #? 你好 🎮\r\nSecond line\r\nTiming: Flexible\r\n\r\nThanks!");
+  assert.deepEqual(Object.keys(headers), ["subject", "body"]);
+  assert.ok(!mail.includes("+"));
   const missing = await page
     .locator('a[href^="#"]')
     .evaluateAll((links) =>
