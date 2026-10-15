@@ -1,0 +1,9 @@
+{
+  "url": "https://canada-high-tech-solutions.vercel.app/core.mjs",
+  "http": 200,
+  "sourceMatchesLocal": true,
+  "sha256": "9234710cc61e414139642e7047774b1bfcfee9d0eb1ebb37bc82ef3538d46f8f",
+  "commit": "14db085a033fd78c9e4c386e412348e8a0cdb082",
+  "nativeDecodeUnitTests": "3 passed against downloaded production module",
+  "browserTests": "core and extended passed on production"
+}

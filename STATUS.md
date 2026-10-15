@@ -35,6 +35,8 @@ The current Vercel CLI authentication worked. A new isolated project was created
 - Replaced `URLSearchParams` with independent `encodeURIComponent` subject/body values. Spaces are `%20`, intended plus signs are `%2B`, body line endings normalize to CRLF, and subject control characters normalize to spaces to prevent header injection.
 - Unit regressions assert exact decoded subject/body, mixed input newlines, Unicode, literal plus signs, reserved characters, safe subject controls, defaults and empty ideas. All three pass after observed RED runs.
 - Browser contact checks now decode natively without replacing plus signs and compare the complete draft at 375, 768 and 1440 pixels. Core and extended browser suites pass locally, with zero detected JS errors, overflow or accessibility violations.
+- Production verified at the existing alias after GitHub auto-deploy of fix commit `14db085a033fd78c9e4c386e412348e8a0cdb082`: HTTP 200 `core.mjs` matches local bytes exactly, SHA-256 `9234710cc61e414139642e7047774b1bfcfee9d0eb1ebb37bc82ef3538d46f8f`. All three native-decode unit tests also pass against the downloaded production module.
+- Both browser suites pass against production, including exact native-decoded draft subject/body at mobile, tablet and desktop widths. GitHub Actions run `38669181069` succeeded. Production evidence is in `evidence/mailto-production.json` and `evidence/extended-qa.json`.
 - No form API, design, destination address or mail-sending behavior changed. No email sent.
 
 ## Limitations
