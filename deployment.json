@@ -1,0 +1,28 @@
+{
+  "productionUrl": "https://canada-high-tech-solutions.vercel.app",
+  "repository": "https://github.com/MasoudSistani/canada-high-tech-solutions",
+  "branch": "main",
+  "provider": "Vercel",
+  "account": "masoudsistani",
+  "scope": "masouds-projects-320aa013",
+  "projectName": "canada-high-tech-solutions",
+  "projectId": "prj_DYhRBewPwyPTQfhcxUxFcrtT2yUe",
+  "firstVerifiedDeployment": {
+    "id": "dpl_GQNHTpEh5Uc4NmBP3CgzWYtTjaNW",
+    "url": "https://canada-high-tech-solutions-13kvei2vz-masouds-projects-320aa013.vercel.app",
+    "status": "READY",
+    "publicHttpStatus": 200
+  },
+  "productionAliasTracks": "Latest production deployment from main; inspect alias for current immutable deployment ID.",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "contactMethod": "mailto draft, explicit user send",
+  "evidence": [
+    "evidence/qa.json",
+    "evidence/extended-qa.json",
+    "evidence/375.png",
+    "evidence/1440.png"
+  ],
+  "secretsRequiredAtRuntime": false
+}

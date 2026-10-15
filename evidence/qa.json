@@ -1,0 +1,30 @@
+{
+  "url": "http://localhost:4173",
+  "runs": [
+    {
+      "width": 375,
+      "http": 200,
+      "consoleErrors": [],
+      "overflow": false,
+      "axeViolations": 0,
+      "interactions": "passed"
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "consoleErrors": [],
+      "overflow": false,
+      "axeViolations": 0,
+      "interactions": "passed"
+    },
+    {
+      "width": 1440,
+      "http": 200,
+      "consoleErrors": [],
+      "overflow": false,
+      "axeViolations": 0,
+      "interactions": "passed"
+    }
+  ],
+  "reducedMotion": "passed"
+}

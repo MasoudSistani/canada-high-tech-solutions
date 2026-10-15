@@ -1,0 +1,44 @@
+{
+  "url": "http://localhost:4173",
+  "results": [
+    {
+      "touch": "CDP native touch drag passed"
+    },
+    {
+      "width": 375,
+      "allModeAccessibility": "passed",
+      "keyboardGame": "passed",
+      "serviceInquiries": "passed",
+      "externalDemo": 200
+    },
+    {
+      "width": 650,
+      "allModeAccessibility": "passed",
+      "keyboardGame": "passed",
+      "serviceInquiries": "passed",
+      "externalDemo": 200
+    },
+    {
+      "width": 768,
+      "allModeAccessibility": "passed",
+      "keyboardGame": "passed",
+      "serviceInquiries": "passed",
+      "externalDemo": 200
+    },
+    {
+      "width": 1024,
+      "allModeAccessibility": "passed",
+      "keyboardGame": "passed",
+      "serviceInquiries": "passed",
+      "externalDemo": 200
+    },
+    {
+      "width": 1440,
+      "allModeAccessibility": "passed",
+      "keyboardGame": "passed",
+      "serviceInquiries": "passed",
+      "externalDemo": 200
+    }
+  ],
+  "noJS": "email and content available"
+}

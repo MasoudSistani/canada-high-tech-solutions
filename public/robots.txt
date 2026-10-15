@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://canada-high-tech-solutions.vercel.app/sitemap.xml
