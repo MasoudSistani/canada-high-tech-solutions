@@ -123,6 +123,8 @@ assert.equal(
   ),
   true,
 );
+assert.equal(await page.locator('.demo-window').evaluate(el => getComputedStyle(el).transform), 'none');
+assert.equal(await page.locator('.art-grid').evaluate(el => getComputedStyle(el).transitionDuration), '0s');
 await page.screenshot({ path: "evidence/reduced-motion-375.png" });
 report.reducedMotion = "passed";
 await browser.close();

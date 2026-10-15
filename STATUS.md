@@ -17,6 +17,8 @@ Local project: `/root/projects/canada-high-tech-solutions`
 - Extended Playwright suite: 375, 650, 768, 1024 and 1440 pixels, all preview modes scanned with axe WCAG A/AA rules, keyboard-only dot game, native CDP touch drag, service-specific inquiry links, empty-brief validation, no-JavaScript email fallback and external demo HTTP 200.
 - Zero detected horizontal overflow, page errors or console errors in the core suite.
 - Reduced-motion media query and static reduced-motion screenshot verified.
+- Production asset hashes match the checked-in HTML, CSS, JavaScript, font, favicon, social image and crawler files. See `evidence/production-assets.json`.
+- GitHub Actions run `38667921247` completed successfully, including the build, browser suites and uploaded evidence.
 - Mobile and desktop screenshots visually inspected, including all preview modes.
 
 Evidence: `evidence/qa.json`, `evidence/extended-qa.json`, `evidence/375.png`, `evidence/768.png`, `evidence/1440.png`, `evidence/reduced-motion-375.png`, and `evidence/lab-*.png`.

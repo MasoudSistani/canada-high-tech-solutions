@@ -1,0 +1,68 @@
+{
+  "url": "https://canada-high-tech-solutions.vercel.app",
+  "results": [
+    {
+      "asset": "index.html",
+      "http": 200,
+      "bytes": 15410,
+      "sha256": "215787347d96171755b237a7d2fb7f945a487264c422874d21e1777aac4f9a51",
+      "sourceMatches": true
+    },
+    {
+      "asset": "app.mjs",
+      "http": 200,
+      "bytes": 6390,
+      "sha256": "21dfde9c567e62550eedd286937716bc0eec85453a7b4b036f6e03b1ea964d2c",
+      "sourceMatches": true
+    },
+    {
+      "asset": "core.mjs",
+      "http": 200,
+      "bytes": 523,
+      "sha256": "b6be0662ac96cf0e632707682758b0cc39d12f3914858bbf56d5ae78128ef1cd",
+      "sourceMatches": true
+    },
+    {
+      "asset": "style.css",
+      "http": 200,
+      "bytes": 23614,
+      "sha256": "83078893af3633aeabd61e03de2d5a39e3229b4f93433a8b9c13e2a9fa307677",
+      "sourceMatches": true
+    },
+    {
+      "asset": "studio.ttf",
+      "http": 200,
+      "bytes": 240164,
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+      "sourceMatches": true
+    },
+    {
+      "asset": "favicon.svg",
+      "http": 200,
+      "bytes": 246,
+      "sha256": "33a76fd04a73d36795e25c9d9b9d21ca2fb172bb2f82de6ce5730f5a90a094f4",
+      "sourceMatches": true
+    },
+    {
+      "asset": "og.png",
+      "http": 200,
+      "bytes": 43446,
+      "sha256": "375a8dbc06927fc2a8fc84f25f6e41a7ee518b2a4af6233102c433f41b5b83eb",
+      "sourceMatches": true
+    },
+    {
+      "asset": "robots.txt",
+      "http": 200,
+      "bytes": 90,
+      "sha256": "f0a96e24e69c29bc3cea0e02b54da42fca044201683df0a856bbaacbbeb9f96d",
+      "sourceMatches": true
+    },
+    {
+      "asset": "sitemap.xml",
+      "http": 200,
+      "bytes": 176,
+      "sha256": "e9420ca2e0bec33fa1a409f4f4bb87f2ccfc53014bfd08dd6696f808ddf495a5",
+      "sourceMatches": true
+    }
+  ]
+}

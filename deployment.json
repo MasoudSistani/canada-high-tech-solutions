@@ -13,6 +13,13 @@
     "status": "READY",
     "publicHttpStatus": 200
   },
+  "verifiedApplicationRevision": "0cf044e81cdb5863e0a418425f2df9b05397c7cb",
+  "verifiedGitHubDeployment": {
+    "id": "dpl_EMuXUptCrjy7wZoW2S9Ahg8vPZDN",
+    "url": "https://canada-high-tech-solutions-hnhwmeryi-masouds-projects-320aa013.vercel.app",
+    "publicHttpStatus": 200,
+    "status": "READY"
+  },
   "productionAliasTracks": "Latest production deployment from main; inspect alias for current immutable deployment ID.",
   "framework": null,
   "buildCommand": "npm run build",

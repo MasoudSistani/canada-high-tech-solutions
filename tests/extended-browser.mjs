@@ -30,8 +30,8 @@ for (const width of [375, 650, 768, 1024, 1440]) {
         .locator(".preview-checklist label")
         .evaluateAll((items) =>
           items.map((el) => ({
-            height: el.getBoundingClientRect().height,
-            width: el.getBoundingClientRect().width,
+            height: el.offsetHeight,
+            width: el.offsetWidth,
           })),
         );
       assert.ok(
